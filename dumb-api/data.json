@@ -1,0 +1,27 @@
+{
+  "ids": {
+    "Stuff": 25
+  },
+  "models": {
+    "Stuff": {
+      "1": "{\"thing\":\"string\",\"id\":1}",
+      "2": "{\"thing\":\"string\",\"id\":2}",
+      "3": "{\"thing\":\"string\",\"id\":3}",
+      "4": "{\"thing\":\"string\",\"id\":4}",
+      "5": "{\"thing\":\"string\",\"id\":5}",
+      "6": "{\"thing\":\"string\",\"id\":6}",
+      "7": "{\"thing\":\"string1\",\"id\":7}",
+      "11": "{\"thing\":\"my new stuff\",\"id\":11}",
+      "12": "{\"thing\":\"my new stuff\",\"id\":12}",
+      "13": "{\"thing\":\"my new stuff\",\"id\":13}",
+      "14": "{\"thing\":\"my new stuff\",\"id\":14}",
+      "15": "{\"thing\":\"my new stuff\",\"id\":15}",
+      "16": "{\"thing\":\"my new stuff\",\"id\":16}",
+      "17": "{\"thing\":\"my new stuff\",\"id\":17}",
+      "18": "{\"thing\":\"my new stuff\",\"id\":18}",
+      "19": "{\"thing\":\"my new stuff\",\"id\":19}",
+      "20": "{\"thing\":\"my new stuff\",\"id\":20}",
+      "21": "{\"thing\":\"my new stuff\",\"id\":21}"
+    }
+  }
+}

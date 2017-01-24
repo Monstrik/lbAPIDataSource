@@ -1,0 +1,72 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "APIDataSource": {
+    "connector": "rest",
+    "name": "restAPI",
+    "crud": false,
+    "debug": true,
+    "operations": [
+      {
+        "functions": {
+          "getStuff": []
+        },
+        "template": {
+          "method": "GET",
+          "url": "http://0.0.0.0:3001/api/Stuff"
+        }
+      },
+      {
+        "functions": {
+          "postStuff": [
+            "newStuffId",
+            "newStuffThing"
+          ]
+        },
+        "template": {
+          "method": "POST",
+          "url": "http://0.0.0.0:3001/api/Stuff",
+          "body": {
+            "id": "{newStuffId:integer}",
+            "thing": "{newStuffThing:string}"
+          }
+        }
+      },
+      {
+        "functions": {
+          "putStuff": [
+            "updatedStuffId",
+            "updatedStuffThing"
+          ]
+        },
+        "template": {
+          "method": "PUT",
+          "url": "http://0.0.0.0:3001/api/Stuff/{updatedStuffId:integer}",
+          "body": {
+            "id": "{updatedStuffId:integer}",
+            "thing": "{updatedStuffThing:string}"
+          }
+        }
+      },
+      {
+        "functions": {
+          "deleteStuff": [
+            "stuffId",
+            "userId",
+            "token"
+          ]
+        },
+        "template": {
+          "method": "DELETE",
+          "url": "http://0.0.0.0:3001/api/Stuff/{stuffId:integer}",
+          "headers": {
+            "authentication": "{token:string}",
+            "userId": "{userId:string}"
+          }
+        }
+      }
+    ]
+  }
+}
